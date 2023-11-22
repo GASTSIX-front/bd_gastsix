@@ -34,7 +34,7 @@ CREATE TABLE produto (
     descricao VARCHAR(255) NOT NULL,
     partnumber VARCHAR(255) NOT NULL UNIQUE,
     codigoSAP VARCHAR(255),
-    setor TINYINT
+    setor CHAR(1)
 );
 
 -- Criação da tabela PEDIDO --
@@ -43,7 +43,7 @@ CREATE TABLE pedido (
     observacoes VARCHAR(255),
     usuario_operador VARCHAR(255),					-- FK TABELA USUARIO
     usuario_supervisor VARCHAR(255),
-    setor TINYINT,
+    setor CHAR(1),
         -- Atributos estrangeiros
     FOREIGN KEY (usuario_operador) REFERENCES usuario(matricula), 				-- REFERENCIA MATRICULA NA TABELA DE USUARIO
     FOREIGN KEY (usuario_supervisor) REFERENCES usuario(matricula)				-- REFERENCIA MATRICULA NA TABELA DE USUARIO
@@ -55,7 +55,7 @@ CREATE TABLE pedido (
 CREATE TABLE estoque (
 	id_estoque BINARY(16) PRIMARY KEY UNIQUE,
     posicao VARCHAR(255),
-    setor VARCHAR(255),
+    setor CHAR(1),
     data DATE,
     tipo_entrada BIT,
     quantidade INT,
