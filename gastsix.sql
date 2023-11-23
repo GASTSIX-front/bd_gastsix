@@ -3,13 +3,16 @@ CREATE DATABASE gastsix;
 
 USE gastsix;
 
+DROP DATABASE gastsix;
+
 -- Criação da tabela USUARIO --
 CREATE TABLE usuario (
     matricula VARCHAR(255) PRIMARY KEY UNIQUE,
-    cpf VARCHAR(255),
-    nome VARCHAR(255),
-    senha VARCHAR(255),
-    funcao VARCHAR(255),
+    email VARCHAR(50) NOT NULL UNIQUE,
+    cpf VARCHAR(255) NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    funcao VARCHAR(255) NOT NULL,
     data_admissao DATE
 );
 
@@ -55,11 +58,10 @@ CREATE TABLE pedido (
 CREATE TABLE estoque (
 	id_estoque BINARY(16) PRIMARY KEY UNIQUE,
     posicao VARCHAR(255),
-    setor CHAR(1),
-    data DATE,
+    setor VARCHAR(255),
+    data_estoque DATE,
     tipo_entrada BIT,
     quantidade INT,
-    
     id_produto BINARY(16),
     
 		-- Atributos estrangeiros
