@@ -25,10 +25,7 @@ CREATE TABLE fornecedor (
     email VARCHAR(255),
     inscricao_estadual VARCHAR(255),
     razao_social VARCHAR(255),
-    endereco VARCHAR(255),
-    numero VARCHAR(255),
-    bairro VARCHAR(255),
-    cep VARCHAR(255)
+    endereco VARCHAR(255)
 );
 
 -- Criação da tabela PRODUTO --
