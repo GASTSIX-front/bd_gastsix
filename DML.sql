@@ -8,7 +8,7 @@ INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
 VALUES ('002', 'carlos@gmail.com', '44455566677', 'Carlos Santos', 'senhaCarlos', 'Supervisor', '20220928');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('003', 'amanda@gmail', '88899900011', 'Amanda Silva', 'senhaAmanda', 'Administrador', '20230310');
+VALUES ('003', 'amanda@gmail.com', '88899900011', 'Amanda Silva', 'senhaAmanda', 'Administrador', '20230310');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
 VALUES ('004', 'roberto@gmail.com', '12345678900', 'Roberto Souza', 'senhaRoberto', 'Operador', '20221205');
@@ -34,35 +34,35 @@ VALUES ('010', 'rafaela@gmail.com', '66677788899', 'Rafaela Pereira', 'senhaRafa
 
 
 -- TABELA FORNECEDOR
-INSERT INTO fornecedor (id_fornecedor, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
-VALUES (UUID_TO_BIN(UUID()), '12345678000190', 'fornecedor1@examplecom', '123456789', 'Empresa A', 'Rua Principal', '123', 'Centro', '12345678');
+INSERT INTO fornecedor (id_fornecedor, nome, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
+VALUES (UUID_TO_BIN(UUID()), 'EMPRESA A', '12345678000190', 'fornecedor1@examplecom', '123456789', 'Empresa A', 'Rua Principal', '123', 'Centro', '12345678');
 
-INSERT INTO fornecedor (id_fornecedor, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
-VALUES (UUID_TO_BIN(UUID()), '98765432000121', 'fornecedor2@examplecom', '987654321', 'Empresa B', 'Avenida Secundária', '456', 'Bairro Novo', '54321876');
+INSERT INTO fornecedor (id_fornecedor, nome, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
+VALUES (UUID_TO_BIN(UUID()), 'EMPRESA B', '98765432000121', 'fornecedor2@examplecom', '987654321', 'Empresa B', 'Avenida Secundária', '456', 'Bairro Novo', '54321876');
 
-INSERT INTO fornecedor (id_fornecedor, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
-VALUES (UUID_TO_BIN(UUID()), '11223344000156', 'fornecedor3@examplecom', '1122334455', 'Empresa C', 'Travessa da Rua Principal', '789', 'Vila Velha', '98765432');
+INSERT INTO fornecedor (id_fornecedor, nome, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
+VALUES (UUID_TO_BIN(UUID()), 'EMPRESA C', '11223344000156', 'fornecedor3@examplecom', '1122334455', 'Empresa C', 'Travessa da Rua Principal', '789', 'Vila Velha', '98765432');
 
-INSERT INTO fornecedor (id_fornecedor, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
-VALUES (UUID_TO_BIN(UUID()), '22334455000178', 'fornecedor4@examplecom', '2233445566', 'Empresa D', 'Praça Central', '321', 'Centro Histórico', '23456789');
+INSERT INTO fornecedor (id_fornecedor, nome, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
+VALUES (UUID_TO_BIN(UUID()), 'EMPRESA D', '22334455000178', 'fornecedor4@examplecom', '2233445566', 'Empresa D', 'Praça Central', '321', 'Centro Histórico', '23456789');
 
-INSERT INTO fornecedor (id_fornecedor, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
-VALUES (UUID_TO_BIN(UUID()), '33445566000190', 'fornecedor5@examplecom', '3344556677', 'Empresa E', 'Alameda dos Anjos', '567', 'Anjo Querido', '34567890');
+INSERT INTO fornecedor (id_fornecedor, nome, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
+VALUES (UUID_TO_BIN(UUID()), 'EMPRESA E', '33445566000190', 'fornecedor5@examplecom', '3344556677', 'Empresa E', 'Alameda dos Anjos', '567', 'Anjo Querido', '34567890');
 
-INSERT INTO fornecedor (id_fornecedor, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
-VALUES (UUID_TO_BIN(UUID()), '44556677000112', 'fornecedor6@examplecom', '4455667788', 'Empresa F', 'Estrada do Interior', '890', 'Zona Rural', '45678901');
+INSERT INTO fornecedor (id_fornecedor, nome, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
+VALUES (UUID_TO_BIN(UUID()), 'EMPRESA F', '44556677000112', 'fornecedor6@examplecom', '4455667788', 'Empresa F', 'Estrada do Interior', '890', 'Zona Rural', '45678901');
 
-INSERT INTO fornecedor (id_fornecedor, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
-VALUES (UUID_TO_BIN(UUID()), '55667788000134', 'fornecedor7@examplecom', '5566778899', 'Empresa G', 'Avenida Principal', '1234', 'Bairro Central', '56789012');
+INSERT INTO fornecedor (id_fornecedor, nome, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
+VALUES (UUID_TO_BIN(UUID()), 'EMPRESA G', '55667788000134', 'fornecedor7@examplecom', '5566778899', 'Empresa G', 'Avenida Principal', '1234', 'Bairro Central', '56789012');
 
-INSERT INTO fornecedor (id_fornecedor, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
-VALUES (UUID_TO_BIN(UUID()), '66778899000156', 'fornecedor8@examplecom', '6677889900', 'Empresa H', 'Rua da Praia', '5678', 'Beira Mar', '67890123');
+INSERT INTO fornecedor (id_fornecedor, nome, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
+VALUES (UUID_TO_BIN(UUID()), 'EMPRESA H', '66778899000156', 'fornecedor8@examplecom', '6677889900', 'Empresa H', 'Rua da Praia', '5678', 'Beira Mar', '67890123');
 
-INSERT INTO fornecedor (id_fornecedor, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
-VALUES (UUID_TO_BIN(UUID()), '77889900000178', 'fornecedor9@examplecom', '7788990011', 'Empresa I', 'Travessa da Avenida', '4321', 'Bairro Novo II', '78901234');
+INSERT INTO fornecedor (id_fornecedor, nome, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
+VALUES (UUID_TO_BIN(UUID()), 'EMPRESA I', '77889900000178', 'fornecedor9@examplecom', '7788990011', 'Empresa I', 'Travessa da Avenida', '4321', 'Bairro Novo II', '78901234');
 
-INSERT INTO fornecedor (id_fornecedor, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
-VALUES (UUID_TO_BIN(UUID()), '88990011000190', 'fornecedor10@examplecom', '8899001122', 'Empresa J', 'Rua do Comércio', '9876', 'Centro Comercial', '89012345');
+INSERT INTO fornecedor (id_fornecedor, nome, cnpj, email, inscricao_estadual, razao_social, endereco, numero, bairro, cep)
+VALUES (UUID_TO_BIN(UUID()), 'EMPRESA J', '88990011000190', 'fornecedor10@examplecom', '8899001122', 'Empresa J', 'Rua do Comércio', '9876', 'Centro Comercial', '89012345');
 
 -- TABELA PRODUTO
 INSERT INTO produto (id_produto, descricao, partnumber, codigoSAP, setor)
@@ -95,6 +95,13 @@ VALUES (UUID_TO_BIN(UUID()), 'Produto I', '012345', 'SAP012', 'C');
 INSERT INTO produto (id_produto, descricao, partnumber, codigoSAP, setor)
 VALUES (UUID_TO_BIN(UUID()), 'Produto J', '678901', 'SAP678', 'A');
 
+
+-- TABELA PEDIDO
+INSERT INTO pedido (id_pedido, observacoes, usuario_operador, usuario_supervisor, setor)
+VALUES ('123', 'Pedido 1 Observações', '001', '002', 'A');
+
+-- TABELA PRODUTO
+
 INSERT INTO produto (id_produto, descricao, partnumber, codigoSAP, setor)
 VALUES (UUID_TO_BIN(UUID()), 'Pedido 2 Observações', '003', '004', 'B');
 
@@ -122,13 +129,8 @@ VALUES (UUID_TO_BIN(UUID()), 'Pedido 9 Observações', '017', '008', 'C');
 INSERT INTO produto (id_produto, descricao, partnumber, codigoSAP, setor)
 VALUES (UUID_TO_BIN(UUID()), 'Pedido 10 Observações', '019', '010', 'A');
 
--- TABELA PEDIDO
-
-INSERT INTO pedido (id_pedido, observacoes, usuario_operador, usuario_supervisor, setor)
-VALUES ('123', 'Pedido 1 Observações', '001', '002', 'A');
 
 -- TABELA ESTOQUE
-
 INSERT INTO estoque (id_estoque, posicao, setor, data_estoque, tipo_entrada, quantidade)
 VALUES (UUID_TO_BIN(UUID()), 'Posicao B', 'B', '20230228', 0, 50);
 
