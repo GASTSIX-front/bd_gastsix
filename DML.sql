@@ -2,34 +2,34 @@
 -- TABELA USUARIOS
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('001', 'maria@gmail.com', '11122233344', 'Maria Oliveira', 'senhaMaria', 'Operador', '20230115');
+VALUES ('001', 'maria@gmail.com', '11122233344', 'Maria Oliveira', 'senhaMaria', '0', '20230115');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('002', 'carlos@gmail.com', '44455566677', 'Carlos Santos', 'senhaCarlos', 'Supervisor', '20220928');
+VALUES ('002', 'carlos@gmail.com', '44455566677', 'Carlos Santos', 'senhaCarlos', '1', '20220928');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('003', 'amanda@gmail.com', '88899900011', 'Amanda Silva', 'senhaAmanda', 'Administrador', '20230310');
+VALUES ('003', 'amanda@gmail.com', '88899900011', 'Amanda Silva', 'senhaAmanda', '2', '20230310');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('004', 'roberto@gmail.com', '12345678900', 'Roberto Souza', 'senhaRoberto', 'Operador', '20221205');
+VALUES ('004', 'roberto@gmail.com', '12345678900', 'Roberto Souza', 'senhaRoberto', '0', '20221205');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('005', 'juliana@gmail.com', '98765432100', 'Juliana Lima', 'senhaJuliana', 'Supervisor', '20221118');
+VALUES ('005', 'juliana@gmail.com', '98765432100', 'Juliana Lima', 'senhaJuliana', '1', '20221118');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('006', 'lucas@gmail.com', '55566677788', 'Lucas Oliveira', 'senhaLucas', 'Administrador', '20230220');
+VALUES ('006', 'lucas@gmail.com', '55566677788', 'Lucas Oliveira', 'senhaLucas', '2', '20230220');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('007', 'fernanda@gmail.com', '77788899900', 'Fernanda Costa', 'senhaFernanda', 'Operador', '20221012');
+VALUES ('007', 'fernanda@gmail.com', '77788899900', 'Fernanda Costa', 'senhaFernanda', '0', '20221012');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('008', 'pedro@gmail.com', '22233344455', 'Pedro Rocha', 'senhaPedro', 'Supervisor', '20230408');
+VALUES ('008', 'pedro@gmail.com', '22233344455', 'Pedro Rocha', 'senhaPedro', '1', '20230408');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('009', 'larissa@gmail.com', '99900011122', 'Larissa Santos', 'senhaLarissa', 'Administrador', '20220825');
+VALUES ('009', 'larissa@gmail.com', '99900011122', 'Larissa Santos', 'senhaLarissa', '2', '20220825');
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('010', 'rafaela@gmail.com', '66677788899', 'Rafaela Pereira', 'senhaRafaela', 'Administrador', '20230515');
+VALUES ('010', 'rafaela@gmail.com', '66677788899', 'Rafaela Pereira', 'senhaRafaela', '2', '20230515');
 
 
 

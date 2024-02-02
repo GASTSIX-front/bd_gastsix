@@ -12,7 +12,7 @@ CREATE TABLE usuario (
     cpf VARCHAR(255) NOT NULL,
     nome VARCHAR(255) NOT NULL,
     senha VARCHAR(255) NOT NULL,
-    funcao VARCHAR(255) NOT NULL,
+    funcao TINYINT NOT NULL,
     data_admissao DATE
 );
 
