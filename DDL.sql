@@ -13,7 +13,8 @@ CREATE TABLE usuario (
     nome VARCHAR(255) NOT NULL,
     senha VARCHAR(255) NOT NULL,
     funcao INT NOT NULL,
-    data_admissao DATE
+    data_admissao DATE,
+	setor CHAR(1) 
 );
 
 
@@ -47,28 +48,12 @@ CREATE TABLE pedido (
         -- Atributos estrangeiros
     FOREIGN KEY (usuario_operador) REFERENCES usuario(matricula), 				-- REFERENCIA MATRICULA NA TABELA DE USUARIO
     FOREIGN KEY (usuario_supervisor) REFERENCES usuario(matricula)				-- REFERENCIA MATRICULA NA TABELA DE USUARIO
-
 );
-
-
--- Criação da tabela ESTOQUE --
-CREATE TABLE estoque (
-	id_estoque BINARY(16) PRIMARY KEY UNIQUE NOT NULL,
-    posicao VARCHAR(255),
-    setor VARCHAR(255) NOT NULL,
-    data_estoque DATE,
-    tipo_entrada BIT,
-    quantidade INT,
-    id_produto_est BINARY(16) NOT NULL,
-    
-		-- Atributos estrangeiros
-    FOREIGN KEY (id_produto_est) REFERENCES produto(id_produto)			-- REFERENCIA MATRICULA NA TABELA DE PRODUTO
-
-);
-
 
 CREATE TABLE pedidoProduto(
 	id_pedido BINARY(16) NOT NULL,
     id_produto BINARY(16) NOT NULL,
-    quantidade_produto INT NOT NULL
+    quantidade_produto INT NOT NULL,
+    FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido),
+	FOREIGN KEY (id_produto) REFERENCES produto(id_produto)
 );

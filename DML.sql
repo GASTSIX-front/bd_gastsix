@@ -1,14 +1,14 @@
 -- INSERIMENTO DE DADOS --
 -- TABELA USUARIOS
 
-INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('001', 'maria@gmail.com', '11122233344', 'Maria Oliveira', 'senhaMaria', '0', '20230115');
+INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao, setor)
+VALUES ('001', 'maria@gmail.com', '11122233344', 'Maria Oliveira', 'senhaMaria', '0', '20230115', null);
 
-INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('002', 'carlos@gmail.com', '44455566677', 'Carlos Santos', 'senhaCarlos', '1', '20220928');
+INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao, setor)
+VALUES ('002', 'carlos@gmail.com', '44455566677', 'Carlos Santos', 'senhaCarlos', '1', '20220928', "A");
 
-INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
-VALUES ('003', 'amanda@gmail.com', '88899900011', 'Amanda Silva', 'senhaAmanda', '2', '20230310');
+INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao, setor)
+VALUES ('003', 'amanda@gmail.com', '88899900011', 'Amanda Silva', 'senhaAmanda', '2', '20230310', "B");
 
 INSERT INTO usuario (matricula, email, cpf, nome, senha, funcao, data_admissao)
 VALUES ('004', 'roberto@gmail.com', '12345678900', 'Roberto Souza', 'senhaRoberto', '0', '20221205');
@@ -130,32 +130,5 @@ INSERT INTO produto (id_produto, descricao, partnumber, codigoSAP, setor)
 VALUES (UUID_TO_BIN(UUID()), 'Pedido 10 Observações', '019', '010', 'A');
 
 
--- TABELA ESTOQUE
-INSERT INTO estoque (id_estoque, posicao, setor, data_estoque, tipo_entrada, quantidade)
-VALUES (UUID_TO_BIN(UUID()), 'Posicao B', 'B', '20230228', 0, 50);
-
-INSERT INTO estoque (id_estoque, posicao, setor, data_estoque, tipo_entrada, quantidade)
-VALUES (UUID_TO_BIN(UUID()), 'Posicao C', 'C', '20230310', 1, 75);
-
-INSERT INTO estoque (id_estoque, posicao, setor, data_estoque, tipo_entrada, quantidade)
-VALUES(UUID_TO_BIN(UUID()), 'Posicao A', 'A', '20230405', 1, 120);
-
-INSERT INTO estoque (id_estoque, posicao, setor, data_estoque, tipo_entrada, quantidade)
-VALUES(UUID_TO_BIN(UUID()), 'Posicao B', 'B', '20230518', 0, 30);
-
-INSERT INTO estoque (id_estoque, posicao, setor, data_estoque, tipo_entrada, quantidade)
-VALUES(UUID_TO_BIN(UUID()), 'Posicao C', 'C', '20230620', 1, 90);
-
-INSERT INTO estoque (id_estoque, posicao, setor, data_estoque, tipo_entrada, quantidade)
-VALUES(UUID_TO_BIN(UUID()), 'Posicao A', 'A', '20230712', 0, 40);
-
-INSERT INTO estoque (id_estoque, posicao, setor, data_estoque, tipo_entrada, quantidade)
-VALUES(UUID_TO_BIN(UUID()), 'Posicao B', 'B', '20230808', 1, 60);
-
-INSERT INTO estoque (id_estoque, posicao, setor, data_estoque, tipo_entrada, quantidade)
-VALUES(UUID_TO_BIN(UUID()), 'Posicao C', 'C', '20230925', 0, 80);
-
-INSERT INTO estoque (id_estoque, posicao, setor, data_estoque, tipo_entrada, quantidade)
-VALUES(UUID_TO_BIN(UUID()), 'Posicao A', 'A', '20231015', 1, 110);
 
 
