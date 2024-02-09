@@ -97,8 +97,8 @@ VALUES (UUID_TO_BIN(UUID()), 'Produto J', '678901', 'SAP678', 'A');
 
 
 -- TABELA PEDIDO
-INSERT INTO pedido (id_pedido, observacoes, usuario_operador, usuario_supervisor, setor)
-VALUES ('123', 'Pedido 1 Observações', '001', '002', 'A');
+INSERT INTO pedido
+VALUES (UUID_TO_BIN(UUID()), 'Pedido 1 Observações', '002', 'A');
 
 -- TABELA PRODUTO
 
@@ -129,6 +129,23 @@ VALUES (UUID_TO_BIN(UUID()), 'Pedido 9 Observações', '017', '008', 'C');
 INSERT INTO produto (id_produto, descricao, partnumber, codigoSAP, setor)
 VALUES (UUID_TO_BIN(UUID()), 'Pedido 10 Observações', '019', '010', 'A');
 
+select BIN_TO_UUID(id_pedido) from pedido;
+select BIN_TO_UUID(id_produto) from produto;
 
+INSERT INTO pedidoproduto (id_pedidoproduto, id_pedido, id_produto, quantidade_produto)
+VALUES (
+    UUID_TO_BIN(UUID()), -- Gera um novo UUID para id_pedidoproduto
+    UUID_TO_BIN("061d105d-c6e1-11ee-9c08-b445067b803e"), -- UUID específico para id_pedido
+    UUID_TO_BIN("0619084a-c6e1-11ee-9c08-b445067b803e"), -- UUID específico para id_produto
+    10 -- Valor para quantidade_produto
+);
+
+insert into pedidoproduto values(
+	(UUID_TO_BIN(UUID()),UUID_TO_BIN("9f8ee780-c6d0-11ee-9c08-b445067b803e"), UUID_TO_BIN("644bf3b7-c6cf-11ee-9c08-b445067b803e"), 20
+);
+
+insert into pedidoproduto values(
+	UUID_TO_BIN("061d105d-c6e1-11ee-9c08-b445067b803e"), UUID_TO_BIN("0619084a-c6e1-11ee-9c08-b445067b803e"), 100
+);
 
 

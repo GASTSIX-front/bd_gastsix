@@ -3,7 +3,6 @@ CREATE DATABASE gastsix;
 
 USE gastsix;
 
-DROP DATABASE gastsix;
 
 -- Criação da tabela USUARIO --
 CREATE TABLE usuario (
@@ -42,15 +41,14 @@ CREATE TABLE produto (
 CREATE TABLE pedido (
 	id_pedido BINARY(16) PRIMARY KEY UNIQUE NOT NULL,
     observacoes VARCHAR(255),
-    usuario_operador VARCHAR(255) NOT NULL,					-- FK TABELA USUARIO
     usuario_supervisor VARCHAR(255) NOT NULL,
     setor CHAR(1) NOT NULL,
         -- Atributos estrangeiros
-    FOREIGN KEY (usuario_operador) REFERENCES usuario(matricula), 				-- REFERENCIA MATRICULA NA TABELA DE USUARIO
     FOREIGN KEY (usuario_supervisor) REFERENCES usuario(matricula)				-- REFERENCIA MATRICULA NA TABELA DE USUARIO
 );
 
-CREATE TABLE pedidoProduto(
+CREATE TABLE pedidoproduto(
+	id_pedidoproduto BINARY(16) PRIMARY KEY UNIQUE NOT NULL,
 	id_pedido BINARY(16) NOT NULL,
     id_produto BINARY(16) NOT NULL,
     quantidade_produto INT NOT NULL,
